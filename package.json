@@ -1,0 +1,29 @@
+{
+  "name": "benmonis.com",
+  "version": "0.0.1",
+  "description": "Website and miscelaneous code for benmonis.com",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrmonis/benmonis-site.git"
+  },
+  "keywords": [
+    "site",
+    "misc",
+    "side",
+    "projects"
+  ],
+  "author": "Ben Monis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrmonis/benmonis-site/issues"
+  },
+  "homepage": "https://github.com/mrmonis/benmonis-site#readme"
+}
