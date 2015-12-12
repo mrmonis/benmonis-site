@@ -6,7 +6,12 @@
   "dependencies": {
     "gulp": "^3.9.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "bower": "^1.7.1",
+    "gulp": "^3.9.0",
+    "gulp-bower": "0.0.11",
+    "main-bower-files": "^2.9.0"
+  },
   "scripts": {
     "test": "test"
   },

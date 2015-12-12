@@ -1,0 +1,31 @@
+{
+  "name": "benmonis.com",
+  "description": "Website and miscelaneous code for benmonis.com",
+  "main": "index.js",
+  "authors": [
+    "Ben Monis"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "site",
+    "misc",
+    "side",
+    "projects"
+  ],
+  "install": {
+    "path": "lib"
+  },
+  "homepage": "https://github.com/mrmonis/benmonis-site",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone.marionette": "marionette#~2.4.4",
+    "bootstrap": "~3.3.6"
+  }
+}
