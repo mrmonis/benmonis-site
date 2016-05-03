@@ -3,15 +3,19 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
+        <title>benjamin.monis</title>
+        <meta name="description" content="Software Developer">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
         <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/xsmall.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -22,12 +26,178 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Coming eventually</p>
+        <nav class="navbar navbar-default navbar-fixed-top navbar-burger navbar-transparent" role="navigation">
+            <!-- if you want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
+            <div class="container">
+                <div class="navbar-header">
+                    <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar bar1"></span>
+                    <span class="icon-bar bar2"></span>
+                    <span class="icon-bar bar3"></span>
+                    </button>
+                    <a target="_blank" href="http://www.benjaminmonis.com?ref=presentation-page" class="navbar-brand">
+                    benjamin.monis
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right navbar-uppercase">
+                        <li>
+                            <a href="#about" data-scroll="true" data-id="#about">
+                            About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#work" data-scroll="true" data-id="#work">
+                            Work
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact" data-scroll="true" data-id="#contact">
+                            Contact
+                            </a>
+                        </li>
+                        <li>
+                             <a href="/sandbox.html" data-scroll="true" data-id="#sandbox">
+                            Sandbox
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+        </nav>
+        <div class="wrapper">
+            <section class="section section-header">
+                <div class="parallax pattern-image">
+                    <canvas id="header-image"></canvas>
+                    <div class="container">
+                        <div class="content">
+                            <h1>Benjamin Monis</h1>
+                            <div class="separator-container">
+                                <div class="separator line-separator">∎</div>
+                            </div>
+                            <h5>Software Developer from London Ontario</h5>
+                        </div>
+                    </div>
+                </div>
+                <a href="" data-scroll="true" data-id="#whoWeAre" class="scroll-arrow hidden-xs hidden-sm">
+                    <i class="fa fa-angle-down"></i>
+                </a>
+            </section>
+            <section id="about">
+                <div class="container">
+                     <div class="title">
+                        <h2>What I Do</h2>
+                        <div class="separator-container">
+                            <div class="separator line-separator">∎</div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="card">
+                                <h3>Work</h3>
+                                <h4>Information Architect - Web Team, 3M Canada</h4>
+                                <p>Since 2013, I've been architecting, building and testing websites and modern web applications for 3M. From initial requirements to finished product, I've been involved in a wide variety of projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="card">
+                                <h3>Agile</h3>
+                                <h4>Scrum Master - Web Team, 3M Canada</h4>
+                                <p>I've been keeping up things flowing no my team for almost a year.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="work">
+                <div class="container">
+                    <div class="title">
+                        <h2>What I've Done</h2>
+                        <div class="separator-container">
+                            <div class="separator line-separator">∎</div>
+                        </div>
+                        <p>Some of the projects I've worked on lately.</p>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                             <h4>3M Safety Site*</h4>
+                            <div class="panel">
+                                <a href="3m.ca/safety" target="_blank">
+                                    <img src="img/safety_opt.png" class="img-responsive">
+                                </a>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-md-offset-2">
+                            <h4>3M Collision Repair*</h4>
+                            <div class="panel">
+                                <a href="3mcollision.ca/bodyman" target="_blank">
+                                    <img src="img/bodyman_opt.png" class="img-responsive">
+                                </a>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- <section id="contact" class="section section-contact">
+                <div class="container">
+                    <div class="title">
+                        <h2>What can I do for you?</h2>
+                        <div class="separator-container">
+                            <div class="separator line-separator">∎</div>
+                        </div>
+                        <p>Let me know how I can help</p>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="row">
+                        <form id="contactMe">
+                            <div class="col-md-8 col-md-offset-2">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-md-offset-2">
+                                <div class="form-group">
+                                    <input type="email" name="email" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-md-offset-2">
+                                <div class="form-group">
+                                    <textarea rows="5" name="text" class="form-control" placeholder="Text..."></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-md-offset-2">
+                                <div class="form-group">
+                                    <input type="submit" name="submit" title="Submit" class="form-control">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section> -->
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <p class="disclaimer"><sup>*</sup> These projects are the sole property of 3M Canada. I do not own them in any way</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/particle.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
