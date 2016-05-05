@@ -1,6 +1,7 @@
 <?php 
 
 	include('../config/config.php');
+	http_response_code(501);
 
 	// Grab PHP inputs
 	$name = $_POST["name"];
@@ -15,12 +16,10 @@
 	    die("Connection failed: " . mysqli_connect_error());
 	}
 
-
 	$stmt = $conn->prepare("INSERT INTO contacts (name, email, message) VALUES (?, ?, ?)");
     $stmt->bind_param('sss', $name, $email, $message);
-    $stmt->execute();
-    $result = $stmt->get_result();
-    if($result) {
+    if($stmt->execute()) {
+    	http_response_code(200);
         echo "Update successful";
     } else {
         echo "Update failed";
