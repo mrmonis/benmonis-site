@@ -7,6 +7,10 @@ section {
 	padding-top: 35px;
 }
 
+footer {
+	padding-bottom: 10px;
+}
+
 .panel p {
 	padding:15px;
 }
@@ -14,6 +18,10 @@ section {
 .disclaimer {
 	font-size: 0.85em;
 	text-align: left;
+}
+
+.navbar-default .navbar-brand {
+	color:black;
 }
 
 .section-header {
