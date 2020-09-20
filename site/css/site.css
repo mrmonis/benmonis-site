@@ -100,7 +100,7 @@ ul a {
 }
 
 header {
-  margin-top: 25vh;
+  margin: 25vh 16px 0 16px;
 }
 
 .site-wrapper {
